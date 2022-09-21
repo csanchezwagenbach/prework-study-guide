@@ -10,20 +10,42 @@
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./assets/bootcamp-logo.png" alt="Profile image of UCLA bootcamp logo." />
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
+          <li>In HTML, an 'element' refers to a type of content on a webpage.</li>
+          <li>Some element types used to add content to a webpage are text elements, image elements, header elements, and list elements.</li>
+          <li>Common element types used to divide and describe a page include meta-related elements, content division elements, and semantic elements.</li>
+          <li>An HTML attribute defines additional information about an element and is always defined in the beginning element, never the closing element.</li>
+          <li>The head element contains information about the webpage pertinent to the web browser, often called metadata.</li>
+          <li>Metadata tags found in the head element include the title (defines title for webpage, a required element and critical for Search Engine Optimization [SEO]), style (defines CSS styles associated with webpage), base (defines the base URL for a webpage), link (connects external resources to HTML doc), meta (character set, description, keywords, author, and viewport), and script elements (embeds client-side scripts in HTML doc).</li>
+          <li>External CSS style sheets are linked after the final meta element and before the title element.</li>
+          <li>Links follow the uniform format link rel="stylesheet" href="relative file location".</li>
+          <li>rel= determines the relationship between the current HTML file and the linked document resource.</li>
+          <li>href= describes the location of the stylesheet relative to the current HTML file.</li>
           <li>The body element represents the visible content shown to the user.</li>
+          <li>Elements nested within other elements are referred to as child elements. Reciprocally, the element that holds the children is the parent element.</li>
+          <li>There are a number of online resources to assist with identifying and deploying the diverse organizational tools within the body element of an HTML file!</li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>There are three methods of adding CSS to an HTML file: inline CSS, interal style sheets, and external CSS style sheets.</li>
+          <li>Inline CSS applies only to a specific HTML tag and only styles that particular page element.</li>
+          <li>An internal style sheet contains CSS rules for the webpage in the head section of an HTML file. The rules only apply to that given page.</li>
+          <li>External CSS style sheets are the preferred method. External style sheets allow all CSS rules to be kept in a separate file, facilitating design changes and adhering to the Separation of Concerns principle.</li>
+          <li>When using an external CSS style sheet, remember that it must be linked in the HTML file's head section.</li>
+          <li>External style sheets are linked after the final meta element and before the title element.</li>
+          <li>CSS Rules have two components, a selector and a declaration block.</li>
+          <li>The selector defines the element or attributes to which the ruels, or declarations, will apply.</li>
+          <li>Declarations contain two important components, the CSS property one wants to apply and the value of that property.</li>
+          <li>Declarations follow the uniform format "property: value;".</li>
+          <li>Class selectors allow a CSS specification to be applied to all given HTML elements assigned to that class. Class selectors are preceded by a period in this manner, .given-class</li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
@@ -33,12 +55,27 @@
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>Git Flow refers to the regular process of syncing the local and remote repositories.</li>
+          <li>First, changed files in your working directory must be sent to the staging area of Git. Use the command 'git add -A' to stage all changes made.</li>
+          <li>After staging changes, they can be commit to the remote repository with a message using the command git commit -m "message describing changes made typed here".</li>
+          <li>Before opening a pull request, use command 'git pull origin main' to ensure current branch is up to date.</li>
+          <li>Finally, use command 'git push origin branch-name' to open pull request on remote repository.</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>A function is a defined set of instructions that can be called and executed.</li>
+          <li>Remember, after defining a function, it must be called in order to execute itself!</li>
+          <li>Multiple pieces of data may be stored in a variable. The collection of data is known as an array.</li>
+          <li>Conditional statements may be used to intervene in the control flow and determine what code is to be executed.</li>
+          <li>Loops may be used to execute a given task repeatedly. Three statements define a loop.</li>
+          <li>First, the starting poing for the loop. To start at the beginning of an array, declare a variable x and give it a value of 0.</li>
+          <li>Next is the condition. The condition determines the number of times the loop will be kept running. To run a loop for the duration of an array, set the variable x to be less than the 'array.length'.</li>
+          <li>The final statement determines how the array will iterate the items. To iterate each item in an array, use the code x++, which is a shortcut for telling x to increase by 1 for each run of the loop</li>
+          <li>Like a CSS stylesheet, a .js file must be linked to the HTML file.</li>
         </ul>
       </section>
     </main>
